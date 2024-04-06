@@ -9,7 +9,7 @@ impl<T> Queue<T> {
         Queue { queue: Vec::new() }
     }
 
-    /// Создает новый экземпляр очереди.
+    /// Возвращает длину очереди.
     fn length(&self) -> usize {
         self.queue.len()
     }
@@ -24,7 +24,7 @@ impl<T> Queue<T> {
         self.queue.remove(0)
     }
 
-    /// Удаляет и возвращает первый элемент из очереди.
+    /// Проверяет, пустая ли очередь.
     fn is_empty(&self) -> bool {
         self.queue.is_empty()
     }
